@@ -16,12 +16,16 @@ print(mensaje)
 
 
 
-#-----------2.2 Comentando seu c?digo---------------------
+#-----------2.2 Comentando seu codigo---------------------
 
-#Isto ? um coment?rio
+#Esto es un comentario 
 
-#Os coment?rios podem ser utilizados para ajudar outros programadores a entender o seu c?digo
 
+#Los comentarios pueden ser utilizados para ayudar a otros programadores a entender su codigo 
+
+#Para comentar es suficiente insertar el caracter # al inicio de la linea 
+#con eso el interpretador de lenguaje R ignora lo que se encuentra digitado en la linea 
+#caso contrario puede mostrar un mensaje de error
 
 #Para comentar basta inserir o caractere # no ?nicio da linha 
 #Com isso o interpretador da linguagem R ir? ignorar o que for digitado
