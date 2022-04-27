@@ -16,7 +16,7 @@ print(mensaje)
 
 
 
-#-----------2.2 Comentando seu codigo---------------------
+#-----------2.2 Comentando su codigo---------------------
 
 #Esto es un comentario 
 
@@ -29,22 +29,22 @@ print(mensaje)
 
 
 
-# No olvide comentar su codigo 
+# No olvide comentar su codigo !
 
 
 #---------------2.3 Documentacion de la funcion----------------
 
 #Acessando a la documentacion de la funcion adicionando el signo de interrogacion (?) al frente de la funcion 
 
-#Ejemplo: consultando la documentación de la funci
+#Ejemplo: consultando la documentación de la funcion print 
 
-#Exemplo: Consultando a documenta??o da fun??o print
+
 ?print
 
-#O resultado ir? aparecer na aba Help
+#El resultado aparece en la ventana help 
 
-#Outras fun??es ?teis
-?head
+#Visualizando la documentación de otras funciones 
+
 ?str
 ?getwd
 ?mean
@@ -52,185 +52,222 @@ print(mensaje)
 ?sum
 ?seq
 
-#La documentaci?n de las funciones solamente con el signo de interrigaci?n 
 
 
-#-----------------2.4 Instalando pacotes--------------------
+#-----------------2.4 Instalacion de paquetes--------------------
 
-#Instalando um novo pacote
+#Instalanddo un nuevo paquete 
 
-#Instalando o pacote ggplot2
+#Instalando el paquete ggplot2
 #install.packages("ggplot2")
 
-#Carregando o pacote ggplot2
+#Cargando el paquete ggplot2
 #library(ggplot2)
 
-# ggplot 2 ? um pacote de visualiza??o de dados - utilizado para a cria??o de gr?ficos
+#ggplot es un paquete de visualizacion de datos utilizado para la creacion de graficos 
 ?ggplot2
 
 
-#Instalaci?n de los paquetes 
+#Si deseas aprender más de ggplot puedes revisar los siguientes enlaces: 
+
+#Visualizacion de datos en ggplot - Autor: Rverso 
+#https://www.youtube.com/watch?v=o6ab2qFDzB0
+
+#Aja pero no es el unico paquete que puede ser de utilidad para desarrollar gráficos. 
+
+#tmap: Mapas en R
+#https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html
+
+#gganimate: Graficos animados 
+#https://gganimate.com/
+
+#-----------------------2.5 Estructura de datos---------------------------
+
+########################## VECTORES 
+
+#Almacena un conjunto de valores ordenados llamados de elementos. Todos los elementos de un vector deben ser del mismo tipo. 
 
 
-#-----------------------2.5 Estrutura de dados---------------------------
-
-
-#Vetores
-#Armazena um conjunto de valores ordenados chamados de elementos. Todos os elementos de um vetor devem ser do mesmo tipo.
-
-#Criando um vetor
+#Creando un vector 
 ?c()
 
-cidade <-c("Bras?lia",
-           "S?o Paulo",
-           "Rio de Janeiro",
-           "Porto Alegre")
+ciudades <-c("Brasilia","Sao Paulo", "Rio de Janeiro","Porto Alegre")
 
-#Visualizando os dados do vetor
-cidade
+#Visualizando los datos de un vector 
+
+ciudades
+
+#creando nuevos vectores 
 
 temperatura <- c(32,22,35,17)
 
-regiao <- c(1,2,2,3)
+region <- c(1,2,2,3)
+
+#Animate a crear mas vectores............
 
 
-
-#Acessando o primeiro elemento
-
-cidade[1]
+#¿Como puedo acceder al primer elemento del vector ciudades?
+ciudades[1]
+#¿Como puedo acceder al tercer elemento del vector temperatura?
 temperatura[3]
-regiao[4]
+#¿Como puedo acceder al cuarto elemento del vector region?
+region[4]
 
-#Acessando um intervalo de elementos
+#Ahora si deseo acceder a un intervalo de elementos
+
 temperatura[1:3]
 
 
-#Copiando um vetor
-cidade2 <- cidade
-cidade2
+#Copiando el contenido de un vector 
 
-#Excluindo o segundo elemento da consulta
-temperatura[-2]
 
-#Altereando um vetor
-cidade2[3] <- "Belo Horizonte"
 
-#Adicionando um novo elemento
-cidade2[5] <- "Curitiba"
-cidade2 
+ciudades2 <- ciudades
 
-#Deletando o vetor
-cidade2 <- NULL
-cidade2
+ciudades2
 
-#Fatores 
-#Armazena valores categ?ricos (nominal ou ordinal).
+#Excluyendo al segundo elemento de la consulta pero primero revisemos el contenido original 
+#y visualizemos la diferencia 
+temperatura 
+temperatura[-2]#Se debería excluir el numero 22, ¿no es cierto?
+
+#Modificando un vector 
+
+ciudades2#Ahora deseo cambiar a Rio de Janeiro por Belo Horizonte 
+
+ciudades2[3] <- "Belo Horizonte"
+ciudades2
+
+#Adicionando un nuevo elemento al vector 
+
+ciudades2[5] <- "Curitiba"
+ciudades2 
+
+#Borrando un vector 
+
+ciudades2 <- NULL
+ciudades2
+
+########################## FACTORES 
+
+
+#Almacena valores categoricos(nominal  u ordinal)
+
 #Datos por niveles 
 
 
-?factor
+
 
 UF <- factor(c("DF", "SP", "RJ", "RS"))
 UF
 
 
-grau.instrucao <- factor(c("N?vel M?dio",
+grado.instruccion <- factor(c("Excelente",
                            "Superior",
-                           "Nivel M?dio",
+                           "Nivel Medio",
                            "Fundamental"),
                          levels = c("Fundamental",
-                                    "Nivel M?dio",
-                                    "Superior"),
+                                    "Nivel Medio",
+                                    "Superior",
+                                    "Excelente"),
                          ordered = TRUE)
 
-grau.instrucao
+grado.instruccion
+
+#¿Que aplicaciones tienen los factores?
+#¿Que son los datos categoricos?
+#Aquí puedes encontrar las respuestas.................
+
+#R para ciencia de datos 
+#https://es.r4ds.hadley.nz/factores.html
+
+########################## LISTAS
+
+#Son un tipo especial de vector porque a diferencia de las mismas es posible adicionar elementos de DIFERENTES TIPOS.  
 
 
-#Listas
-#? um tipo especial de vetor, por?m ? poss?vel adicionar elementos de tipos diferentes.
+persona <- list(sexo = "M", ciudad = "Brasilia", edad = 20)
 
 
-?list()
+#Accediendo al primer elemento de la lista
 
-pessoa <- list(sexo = "M", cidade = "Bras?lia", idade = 20)
+persona[1]
+persona[3]
 
-pessoa
 
-#Acessando o primeiro elemento da lista
-pessoa[1]
-pessoa[3]
+#Editando la lista en este caso de persona 
 
-#Acessando o valor do primeiro elemento da lista
-pessoa[[1]]
-pessoa[[2]]
+persona[["edad"]] <- 24
+persona
 
-#Editando a lista
-pessoa[["idade"]] <- 24
-pessoa
+#Borrando un elemento de la lista en este caso de ciudad 
 
-#Deletando elemento da lista
-pessoa[["idade"]] <- NULL
-pessoa
+persona[["ciudad"]] <- NULL
+persona
 
-#Criando novamente a lista
-pessoa <- list(sexo = "M", cidade = "Bras?lia", idade = 20)
+#Creando una nueva lista 
 
-#Filtrando elementos da lista
-pessoa[c("cidade", "idade")]
+persona <- list(sexo = "M", ciudad = "Brasilia", edad = 20)
+
+#Filtrando elementos de la lista 
+
+persona[c("ciudad", "edad")]
 
 #Lista de listas
-cidades <- list(cidade = cidade,
-                temperatura = temperatura,
-                regiao = regiao)
-cidades
+listad <- list(cda = ciudades, tra = temperatura, rgn = region)
+listad
+
+#Animate a crear una lista!!!!!!!
 
 
-#Criando um data frame com vetores
+########################## DATAFRAME
 
-#Dataframe: ? utilizado para organizar elementos em linhas e colunas, semelhante a uma planilha ou base de dados. Al?m disso, pode ser formado por listas ou vetores.
+#Creando un dataframe con vectores 
 
-df <- data.frame(cidade,temperatura)
+#Dataframe: utilizado para organizar elementos en lineas y columnas, semejante a una planilla o base de datos. También pueden ser formados por listas y vectores. 
+
+df <- data.frame(ciudades,temperatura)
 df
 
-df2 <- data.frame(cidades)
+df2 <- data.frame(ciudades)
 df2
 
-#Filtrando valores do data frame
-#Recuperando o valor da linha 1, coluna 2
+#Filtrando valores del dataframe
+#Visualizando el valor de la fila 1 y columna 2
 df[1,2]
 
-#Recuperando todas as linhas da primeira coluna
+#Visualizando los valores de la primera columna 
 df[, 1]
 
-#Recuperando a Primeira linha e todas as colunas
+#Visualizando la primera fila y todas las columnas
 df[1,]
 
-#Selecionando as 3 primeiras linhas da primeira e ultima coluna
-df2[c(1:3), c(1,3)]
 
+#Visualizando el nombre de las columnas 
 
-#Verificando o nome das colunas
 names(df)
 
-#Verificando numero de linhas x colunas
+#Visualizando las dimensiones de filas y columnas 
+
 dim(df)
 
-#Verificando os tipos de dados
+#Visualizando los tipos de datos 
+
 str(df)
 
 
-#Acessar uma coluna do dataframe
-df$cidade
+#Accediendo a la columna de un dataframe
 
-#Visualizar en una columna 
+df$ciudades
 
-
-df['cidade']
+#Visualizando una columna 
 
 
+df['ciudades']
 
 
-?matrix()
+
+########################## MATRICES
 
 #Matrizes
 #Armazena dados tabulares semelhante ao data frame, por?m s? aceita um tipo de dado.
