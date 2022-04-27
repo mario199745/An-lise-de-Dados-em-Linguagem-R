@@ -27,18 +27,16 @@ print(mensaje)
 #con eso el interpretador de lenguaje R ignora lo que se encuentra digitado en la linea 
 #caso contrario puede mostrar un mensaje de error
 
-#Para comentar basta inserir o caractere # no ?nicio da linha 
-#Com isso o interpretador da linguagem R ir? ignorar o que for digitado
-#Caso contr?rio ser? exibida uma mensagem de erro
 
 
-# Comentando su c?digo 
+# No olvide comentar su codigo 
 
 
-#---------------2.3 Documenta??o da fun??o----------------
+#---------------2.3 Documentacion de la funcion----------------
 
-#Acessando a documenta??o de uma fun??o
-#basta adicionar o caractere de interroga??o (?) na frente do nome da fun??o
+#Acessando a la documentacion de la funcion adicionando el signo de interrogacion (?) al frente de la funcion 
+
+#Ejemplo: consultando la documentación de la funci
 
 #Exemplo: Consultando a documenta??o da fun??o print
 ?print
