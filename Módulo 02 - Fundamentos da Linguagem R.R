@@ -126,6 +126,7 @@ ciudades2 <- ciudades
 
 ciudades2
 
+
 #Excluyendo al segundo elemento de la consulta pero primero revisemos el contenido original 
 #y visualizemos la diferencia 
 temperatura 
