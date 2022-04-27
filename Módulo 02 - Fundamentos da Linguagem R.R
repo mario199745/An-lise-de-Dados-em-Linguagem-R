@@ -1,44 +1,47 @@
 
 #https://mooc38.escolavirtual.gov.br/course/view.php?id=4080
 
-#----------------2.1. Criando o seu primeiro script-----------------------
+#----------------2.1. Creando tu primer script -----------------------
 
-#Atribuindo texto à variável mensagem
-mensagem <- "Hello world!"
 
-#Imprimindo o valor da variável no console
-print(mensagem)
+#Imprimiendo el primer mensaje 
+
+mensaje <- "Hello world!"
+
+#Imprimiendo el valor de la variable en la consola 
+
+print(mensaje)
 
 # Creando el primer script 
 
 
 
-#-----------2.2 Comentando seu código---------------------
+#-----------2.2 Comentando seu c?digo---------------------
 
-#Isto é um comentário
+#Isto ? um coment?rio
 
-#Os comentários podem ser utilizados para ajudar outros programadores a entender o seu código
-
-
-#Para comentar basta inserir o caractere # no ínicio da linha 
-#Com isso o interpretador da linguagem R irá ignorar o que for digitado
-#Caso contrário será exibida uma mensagem de erro
+#Os coment?rios podem ser utilizados para ajudar outros programadores a entender o seu c?digo
 
 
-# Comentando su código 
+#Para comentar basta inserir o caractere # no ?nicio da linha 
+#Com isso o interpretador da linguagem R ir? ignorar o que for digitado
+#Caso contr?rio ser? exibida uma mensagem de erro
 
 
-#---------------2.3 Documentação da função----------------
+# Comentando su c?digo 
 
-#Acessando a documentação de uma função
-#basta adicionar o caractere de interrogação (?) na frente do nome da função
 
-#Exemplo: Consultando a documentação da função print
+#---------------2.3 Documenta??o da fun??o----------------
+
+#Acessando a documenta??o de uma fun??o
+#basta adicionar o caractere de interroga??o (?) na frente do nome da fun??o
+
+#Exemplo: Consultando a documenta??o da fun??o print
 ?print
 
-#O resultado irá aparecer na aba Help
+#O resultado ir? aparecer na aba Help
 
-#Outras funções úteis
+#Outras fun??es ?teis
 ?head
 ?str
 ?getwd
@@ -47,7 +50,7 @@ print(mensagem)
 ?sum
 ?seq
 
-#La documentación de las funciones solamente con el signo de interrigación 
+#La documentaci?n de las funciones solamente con el signo de interrigaci?n 
 
 
 #-----------------2.4 Instalando pacotes--------------------
@@ -60,11 +63,11 @@ print(mensagem)
 #Carregando o pacote ggplot2
 #library(ggplot2)
 
-# ggplot 2 é um pacote de visualização de dados - utilizado para a criação de gráficos
+# ggplot 2 ? um pacote de visualiza??o de dados - utilizado para a cria??o de gr?ficos
 ?ggplot2
 
 
-#Instalación de los paquetes 
+#Instalaci?n de los paquetes 
 
 
 #-----------------------2.5 Estrutura de dados---------------------------
@@ -76,8 +79,8 @@ print(mensagem)
 #Criando um vetor
 ?c()
 
-cidade <-c("Brasília",
-           "São Paulo",
+cidade <-c("Bras?lia",
+           "S?o Paulo",
            "Rio de Janeiro",
            "Porto Alegre")
 
@@ -119,7 +122,7 @@ cidade2 <- NULL
 cidade2
 
 #Fatores 
-#Armazena valores categóricos (nominal ou ordinal).
+#Armazena valores categ?ricos (nominal ou ordinal).
 #Datos por niveles 
 
 
@@ -129,12 +132,12 @@ UF <- factor(c("DF", "SP", "RJ", "RS"))
 UF
 
 
-grau.instrucao <- factor(c("Nível Médio",
+grau.instrucao <- factor(c("N?vel M?dio",
                            "Superior",
-                           "Nivel Médio",
+                           "Nivel M?dio",
                            "Fundamental"),
                          levels = c("Fundamental",
-                                    "Nivel Médio",
+                                    "Nivel M?dio",
                                     "Superior"),
                          ordered = TRUE)
 
@@ -142,12 +145,12 @@ grau.instrucao
 
 
 #Listas
-#É um tipo especial de vetor, porém é possível adicionar elementos de tipos diferentes.
+#? um tipo especial de vetor, por?m ? poss?vel adicionar elementos de tipos diferentes.
 
 
 ?list()
 
-pessoa <- list(sexo = "M", cidade = "Brasília", idade = 20)
+pessoa <- list(sexo = "M", cidade = "Bras?lia", idade = 20)
 
 pessoa
 
@@ -182,7 +185,7 @@ cidades
 
 #Criando um data frame com vetores
 
-#Dataframe: É utilizado para organizar elementos em linhas e colunas, semelhante a uma planilha ou base de dados. Além disso, pode ser formado por listas ou vetores.
+#Dataframe: ? utilizado para organizar elementos em linhas e colunas, semelhante a uma planilha ou base de dados. Al?m disso, pode ser formado por listas ou vetores.
 
 df <- data.frame(cidade,temperatura)
 df
@@ -228,7 +231,7 @@ df['cidade']
 ?matrix()
 
 #Matrizes
-#Armazena dados tabulares semelhante ao data frame, porém só aceita um tipo de dado.
+#Armazena dados tabulares semelhante ao data frame, por?m s? aceita um tipo de dado.
 
 #Criando uma matriz
 m <- matrix(seq(1:9), nrow = 3)
@@ -246,13 +249,13 @@ m2
 m2[c(1:2), c("B","C")]
 
 
-#---------------------2.6 Estruturas de repetição-----------------
+#---------------------2.6 Estruturas de repeti??o-----------------
 #Loops
 
 #For
 
 # for (valor in sequencia){
-#   código...
+#   c?digo...
 # }
 
 ?seq
@@ -265,8 +268,8 @@ for (i in seq(12)){
 
 #While
 
-# while(condição){
-#   código...
+# while(condi??o){
+#   c?digo...
 # }
 
 
@@ -284,8 +287,8 @@ while(i <= 10){
 
 #Controle de fluxo
 
-# if(condição){}
-#   código...
+# if(condi??o){}
+#   c?digo...
 # }
 
 
@@ -293,7 +296,7 @@ while(i <= 10){
 
 x = 10
 if (x > 0){
-  print("Número Positivo")
+  print("N?mero Positivo")
 }
 
 
@@ -301,37 +304,37 @@ nota = 4
 if (nota >=7){
   print("Aprovado")
 }else if (nota > 5 && nota < 7){
-  print("Recuperação")
+  print("Recupera??o")
 }else{
   print("Reprovado")
 }
 
 
-#---------------2.8 Criando funções----------------
+#---------------2.8 Criando fun??es----------------
 
-#Estrutura da função
+#Estrutura da fun??o
 
 # nome.funcao <- function(argumento){
-#   código
+#   c?digo
 # }
 
 
-#Criando a função
+#Criando a fun??o
 par.impar <- function(num){
   if((num %% 2) == 0){
     return("Par")
   }else
-    return("Ímpar")
+    return("?mpar")
 }
 
-#Usando a função
+#Usando a fun??o
 num = 3
 par.impar(num)
 
 
 
 
-#--------------------2.9 Utilizando funções apply-----------------
+#--------------------2.9 Utilizando fun??es apply-----------------
 
 
 #Apply()
@@ -373,7 +376,7 @@ sapply(numeros, mean)
 
 library(dplyr)
 
-#---------------- 2.10 Criando gráficos ------------
+#---------------- 2.10 Criando gr?ficos ------------
 
 
 #Graficos
@@ -390,19 +393,19 @@ head(carros)
 #Histograma
 hist(carros$mpg)
 
-#Gráfico de dispersão
+#Gr?fico de dispers?o
 plot(carros$mpg,carros$cyl)
 
 #install.packages("ggplot2")
 library(ggplot2)
 
-#Criando gráfico de barras com ggplot2
+#Criando gr?fico de barras com ggplot2
 ggplot(carros,aes(am))+
   geom_bar()
 
 
 
-#-----------------------3.1. Utilizando junções----------------------
+#-----------------------3.1. Utilizando jun??es----------------------
 
 
 #Join
@@ -420,15 +423,15 @@ head(df1)
 df2 <- data.frame(Produto = c(1,2,3,4), Nome = c("A","B","C","D"))
 head(df2)
 
-#Resultado da junção df1 + df2 usando left join
+#Resultado da jun??o df1 + df2 usando left join
 df3 <- left_join(df1,df2,"Produto")
 head(df3)
 
-#Resultado da junção df1 + df2 usando right join
+#Resultado da jun??o df1 + df2 usando right join
 df4 <- right_join(df1,df2, "Produto")
 head(df4)
 
-#Resultado da junção df1 + df2 usando inner join
+#Resultado da jun??o df1 + df2 usando inner join
 df5 <- inner_join(df1, df2, "Produto")
 head(df5)
 
@@ -479,7 +482,7 @@ select(iris, Sepal.Length) %>%
 #Group by
 ?group_by
 
-# Agrupando os dados - Tamanho médio da sépala por espécie
+# Agrupando os dados - Tamanho m?dio da s?pala por esp?cie
 iris %>% group_by(Species) %>%
   summarise(mean(Sepal.Length))
 
@@ -503,7 +506,7 @@ dfDate <- data.frame(Produto = c('A','B','C'),
 
 head(dfDate)
 
-#Utilizando a função gather para mudar o formato da tabela
+#Utilizando a fun??o gather para mudar o formato da tabela
 ?gather
 
 dfDate2 <- gather(dfDate, "Ano", "Quantidade", 2:4)
@@ -520,15 +523,15 @@ dfDate3
 dfDate3 <- dfDate3[-2]
 dfDate3
 
-#Acrescentando uma coluna Mês
+#Acrescentando uma coluna M?s
 dfDate3$Mes <- c('01','02','03')
 
 dfDate3
 
-#Fazendo a união da coluna Ano e Mês
+#Fazendo a uni?o da coluna Ano e M?s
 ?unite
 
-#Criando a coluna Data para receber Mês e Ano - separado por /
+#Criando a coluna Data para receber M?s e Ano - separado por /
 dfDate4 <- dfDate3 %>%
   unite(Data, Mes, Ano, sep = '/')
 
