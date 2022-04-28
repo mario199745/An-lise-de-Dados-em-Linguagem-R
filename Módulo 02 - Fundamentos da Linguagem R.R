@@ -177,7 +177,7 @@ grado.instruccion
 
 #¿Que aplicaciones tienen los factores?
 #¿Que son los datos categoricos?
-#Aquí puedes encontrar las respuestas.................
+#Aqui puedes encontrar las respuestas.................
 
 #R para ciencia de datos 
 #https://es.r4ds.hadley.nz/factores.html
@@ -270,12 +270,16 @@ df['ciudades']
 
 ########################## MATRICES
 
-#Matrizes
-#Armazena dados tabulares semelhante ao data frame, por?m s? aceita um tipo de dado.
+#Matrices
+#Almacena datos tabulares semejante a un dataframe pero solo acepta un tipo de dato 
 
-#Criando uma matriz
+
+#Creando una matriz 
+
 m <- matrix(seq(1:9), nrow = 3)
 m
+
+#Ahora creamos una nueva matriz 
 
 m2 <- matrix(seq(1:25), 
              ncol = 5,
@@ -283,24 +287,29 @@ m2 <- matrix(seq(1:25),
              dimnames = list(c(seq(1:5)),
                              c('A','B','C','D','E'))
 )
+
 m2
 
-#Filtrando a matriz
+#Filtrando una matriz 
+
 m2[c(1:2), c("B","C")]
 
 
-#---------------------2.6 Estruturas de repeti??o-----------------
+#---------------------2.6 Estructuras de repeticion----------------
+
 #Loops
 
 #For
 
-# for (valor in sequencia){
-#   c?digo...
+# for (valor in secuencia){
+#   codigo...
 # }
 
-?seq
 
-#Exemplo for
+
+#Ejemplo for
+
+#El siguiente codigo permite imprimir una secuencia de numeros desde el 1 a 12 
 for (i in seq(12)){
   print(i)
 }
@@ -308,13 +317,14 @@ for (i in seq(12)){
 
 #While
 
-# while(condi??o){
-#   c?digo...
+# while(condicion){
+#   codigo...
 # }
 
 
 #Exemplo while
 
+#El siguiente codigo permite imprimir una secuencia de numeros desde el 1 a 10
 i <- 0
 while(i <= 10){
   print(i)
@@ -323,43 +333,58 @@ while(i <= 10){
 
 
 
-#----------------2.7 Controle de fluxo----------
+#----------------2.7 Control de flujo (condicionales)----------
 
-#Controle de fluxo
+#Control de flujo 
 
 # if(condi??o){}
 #   c?digo...
 # }
 
 
-#Exemplo - Controle de fluxo
+#Ejemplo - Control de flujo 
+
+#Si x es mayor a cero entonces imprimir "Numero positivo"
 
 x = 10
 if (x > 0){
-  print("N?mero Positivo")
+  print("Numero Positivo")
 }
 
+
+#Evaluar la nota e indicar la categoria a la cual corresponde 
 
 nota = 4
 if (nota >=7){
   print("Aprovado")
 }else if (nota > 5 && nota < 7){
-  print("Recupera??o")
+  print("Recuperacion")
 }else{
   print("Reprovado")
 }
 
 
-#---------------2.8 Criando fun??es----------------
+# Ahora animate a crear algunos codigos que puedan resolver los siguientes casos
 
-#Estrutura da fun??o
+# 1. 
+
+
+
+#---------------2.8 Creando funciones----------------
+
+#Estructura de una funcion 
 
 # nome.funcao <- function(argumento){
 #   c?digo
 # }
 
 
-#Criando a fun??o
+# nombre de la funcion <- funcion(argumento){
+#   codigo
+# }
+
+#Creando una funcion 
+
 par.impar <- function(num){
   if((num %% 2) == 0){
     return("Par")
@@ -367,7 +392,9 @@ par.impar <- function(num){
     return("?mpar")
 }
 
-#Usando a fun??o
+
+#Usando la funcion 
+
 num = 3
 par.impar(num)
 
