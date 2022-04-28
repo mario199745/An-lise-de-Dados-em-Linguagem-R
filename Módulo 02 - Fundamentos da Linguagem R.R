@@ -366,17 +366,21 @@ if (nota >=7){
 
 # Ahora animate a crear algunos codigos que puedan resolver los siguientes casos
 
-# 1. 
+# 1. Categorizar objetos si estos pesan más de 25 kg entonces corresponden a grandes si es menor entonces son pequenos
+
+# 2. En un colegio los alumnos mayores a 12 anos deben estar en el salon A y los menores en el salon B, pero si son mayores de 15
+#   estaran en el salon C. 
+
+
 
 
 
 #---------------2.8 Creando funciones----------------
 
+
+
 #Estructura de una funcion 
 
-# nome.funcao <- function(argumento){
-#   c?digo
-# }
 
 
 # nombre de la funcion <- funcion(argumento){
@@ -384,16 +388,18 @@ if (nota >=7){
 # }
 
 #Creando una funcion 
+#La funcion permitira determinar si un numero es par o impar 
 
 par.impar <- function(num){
   if((num %% 2) == 0){
     return("Par")
   }else
-    return("?mpar")
+    return("impar")
 }
 
 
-#Usando la funcion 
+#Aplicando la funcion 
+
 
 num = 3
 par.impar(num)
@@ -401,11 +407,18 @@ par.impar(num)
 
 
 
-#--------------------2.9 Utilizando fun??es apply-----------------
+#--------------------2.9 Utilizando funciones apply -----------------
+
+#¿Que son las funciones apply?
+
+#Aplica una funcion a traves de una matriz, array o data frame. 
+
+#Mas informacion: 
+#https://bookdown.org/jboscomendoza/r-principiantes4/apply.html
 
 
 #Apply()
-?apply
+
 
 x <- seq(1:9)
 x
@@ -421,7 +434,6 @@ result2
 
 
 
-?list
 
 numeros.p <- c(2,4,6,8,10,12)
 numeros.i <- c(1,3,5,7,9,11)
@@ -432,7 +444,6 @@ numeros
 numeros[[2]]
 
 
-?lapply
 
 lapply(numeros, mean)
 
@@ -443,32 +454,68 @@ sapply(numeros, mean)
 
 library(dplyr)
 
-#---------------- 2.10 Criando gr?ficos ------------
+#---------------- 2.10 Creando graficos ------------
+
+
+#Los graficos son esenciales para reprentar los resultados de tus analisis 
+#incluso pueden crarse graficos animados pero para ello nececitas contar con una  base de datos 
+#entonces utilizaremos la base de datos mtcar, la cual es de acceso libre. 
 
 
 #Graficos
 
-#dataset/conjunto de dados
+#dataset/conjunto de datos
+
 ?mtcars
 
-#Filtrando colunas do dataset
+#Filtrando columnas del dataset
+
 carros <- mtcars[,c(1,2,9)]
 
-#Visualizando o dataset
+#Visualizando el dataset 
+
 head(carros)
 
+#Ahora vas a crear tu primer grafico!!!!!!!!
+
+
+
 #Histograma
+
 hist(carros$mpg)
 
-#Gr?fico de dispers?o
+#Grafico de dispersion 
+
 plot(carros$mpg,carros$cyl)
 
+
+
+#Creando graficos con ggplot 
+#¿Porque utilizar ggplot?
+#Permitira crear graficos mas esteticos que mejoraran la visualizacion y analisis de tus datos 
+
+
+
 #install.packages("ggplot2")
+
 library(ggplot2)
 
-#Criando gr?fico de barras com ggplot2
+#Criando grafico de barras con ggplot2
+
 ggplot(carros,aes(am))+
   geom_bar()
+
+#¿Visualizas la diferencia?
+#Quizas no, pero aquí puedes encontrar mas graficos ademas es recomendable tener a la mano el 
+#cheat sheet de ggplot, ya que puedes incorporar mas parametros si deseas mejorar la visualizacion. 
+
+#Data Visualization with ggplot2 : : CHEAT SHEET!!!!!!!!
+#https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/data-visualization-2.1.pdf
+
+
+
+
+
 
 
 
