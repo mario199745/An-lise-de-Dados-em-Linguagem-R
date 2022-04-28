@@ -513,40 +513,51 @@ ggplot(carros,aes(am))+
 #https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/data-visualization-2.1.pdf
 
 
+# Graficando un diagrama de dispersion 
+
+ggplot(mtcars,aes(x = mpg, y = hp))+geom_point(aes(color=factor(cyl), shape = factor(cyl),size = factor(cyl)))+ theme_classic()+
+  labs(title = "Scatterplot - MPG Vs HP",
+       subtitle = "Scatterplot showing Negative Correlation",
+       x = "Miles Per Gallon",
+       y = "Horsepower",
+       caption = "Source: MTCARS Dataset")
+#Fuente: https://medium.com/@mukul.mschauhan/data-visualization-in-r-with-ggplot-b39b14991d69
 
 
 
-
-
-
-#-----------------------3.1. Utilizando jun??es----------------------
+#-----------------------3.1. Utilizando join ----------------------
 
 
 #Join
 
-#Instalando e carregando o pacote
+#Instalando un paquete
+
 #install.packages("dplyr")
 library(dplyr)
 
-??dplyr
-?data.frame
 
-df1 <- data.frame(Produto = c(1,2,3,5), Preco = c(15,10,25,20))
+df1 <- data.frame(Producto = c(1,2,3,5), Precio = c(15,10,25,20))
+
 head(df1)
 
-df2 <- data.frame(Produto = c(1,2,3,4), Nome = c("A","B","C","D"))
+df2 <- data.frame(Producto = c(1,2,3,5), Nombre = c("A","B","C","D"))
 head(df2)
 
-#Resultado da jun??o df1 + df2 usando left join
-df3 <- left_join(df1,df2,"Produto")
+
+#Resultado de join df1 + df2 usando --- left join 
+
+df3 <- left_join(df1,df2,"Producto")
 head(df3)
 
-#Resultado da jun??o df1 + df2 usando right join
-df4 <- right_join(df1,df2, "Produto")
+
+#Resultado de join  df1 + df2 usando --- right join
+
+df4 <- right_join(df1,df2, "Producto")
 head(df4)
 
-#Resultado da jun??o df1 + df2 usando inner join
-df5 <- inner_join(df1, df2, "Produto")
+#Resultado de join  df1 + df2 usando --- inner join
+
+df5 <- inner_join(df1, df2, "Producto")
 head(df5)
 
 
