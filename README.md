@@ -25,24 +25,37 @@
                 <h2 class="mb-5">Información</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h4 class="mb-0">Análise de Dados em Linguagem R</h4>
-                        <div class="subheading mb-3">Escola Nacionalde Administração Pública - Enap</div>
+                        <h4 class="mb-0">Autor</h4>
+                        <div class="subheading mb-3">Ministerio de Economía de Brasil</div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2021 -  Enero 2022</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h4 class="mb-0">Fondos ambientales como una alternativa para la sostenibilidad financiera de las áreas protegidas</h4>
-                        <div class="subheading mb-3">Universidad para la Cooperación Internacional(UCI)</div>
+                        <h4 class="mb-0">Certificador</h4>
+                        <div class="subheading mb-3">Enap</div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Enero 2020 -  Agosto 2021</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h4 class="mb-0">Modelado de distribución de especies:aplicaciones usando R</h4>
-                        <div class="subheading mb-3">Cousteau Consultant Group</div>
+                        <h4 class="mb-0">Carga horaria</h4>
+                        <div class="subheading mb-3">20 h </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2021 - Enero 2022</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Disponibilidad</h4>
+                        <div class="subheading mb-3">20 días</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                </div>
+                               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Idioma</h4>
+                        <div class="subheading mb-3">Portugues</div>
+                    </div>
                 </div>
 
 
