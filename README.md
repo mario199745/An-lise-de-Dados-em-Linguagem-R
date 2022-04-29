@@ -74,7 +74,7 @@ https://github.com/ambarja/snowfalldb-peru
 
 ## **Software**
 
- height=12> **Facebook**
+ 
  * <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/RStudio_logo_flat.svg" height=14> **Rstudio**
  
 
