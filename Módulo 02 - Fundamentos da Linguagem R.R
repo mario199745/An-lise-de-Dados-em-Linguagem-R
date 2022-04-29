@@ -569,65 +569,100 @@ head(df5)
 #ya sea de df1 o df2. 
 
 
-#---------------------- 3.2 Selecionando os dados ------------
+#---------------------- 3.2 Selecionando los datos  ------------
 #install.packages("dplyr")
 library(dplyr)
 
+#¿Quieres saber lo que es IRIS?
+
 ? iris
 
+#Explora la base de datos iris ....
+#Recuerda que puedes utilizar 
+#head()- Muestra las primeras filas de la tabla 
+#tail()- Muestra las dos ultima filas de la tabla 
+#names() - Muestra los encabezados de las columnas 
+#print() - Muestra la tabla completa en la consola 
+
+View(iris)
+
 #dataset iris
+
 head(iris)
 
-#Visualizando o tipo dos dados com glimpse
+#Aja!!! si deseas visualizar tu tabla de formas mas optima puedes utilizar: 
+View(iris)
+
+#Visualizando los tipos de datos com glimpse
 glimpse(iris)
 
+#glimpse: Permite visualizar los encabezados en una columna junto a algunos de los datos que contiene
 
-#Filter - filtrando os dados - apenas versicolor
+#https://www.r-bloggers.com/2020/05/examining-data-with-glimpse/
+
+#Filter - filtrando los datos para la especie versicolor 
+
 versicolor <- filter(iris, Species == "versicolor")
 versicolor
+
+#También puedes filtrar para otras especies y analizar los resultados 
+
+#Virginica
+#Setosa
+
+
+#Visualizando las dimensiones 
 dim(versicolor)
 
-#Slice - Selecionando algumas linhas especificas
+#Slice - Selecionando algunas lineas especificas 
+
 slice(iris, 5:10)
 
-#Select - selecionando algumas colunas
+#Select - selecionando algunas columnas 
+
 select(iris, 2:4)
 
-#Selecionando todas as colunas exceto Sepal width
+#Selecionando todas las colunas excepto Sepal width
+
 select(iris, -Sepal.Width)
 
-#Criando uma nova coluna com base em colunas existentes (Sepal.Length + Sepal.Width)
+#Creando una nueva columna con en columnas existentes (Sepal.Length + Sepal.Width)
 iris2 <- mutate(iris, nova.coluna = Sepal.Length + Sepal.Width)
 iris2[,c("Sepal.Length", "Sepal.Width", "nova.coluna")]
 
 
-#Arrange - ordenar os dados
-?arrange
+#Arrange - ordenar los datos 
 
 select(iris, Sepal.Length) %>%
   arrange(Sepal.Length)
 
 
 #Group by
-?group_by
 
-# Agrupando os dados - Tamanho m?dio da s?pala por esp?cie
+#Agrupando los datos segun la media por cada especie 
+
 iris %>% group_by(Species) %>%
   summarise(mean(Sepal.Length))
 
 
-#----------------------- 3.3 Transformando os dados -------------
+#----------------------- 3.3 Transformando los datos -------------
 
 
 #Tidyr
+#Ayuda a crear datos ordenados
+
+
+#Recuerda instalar el paquete 
+
 #install.packages("tidyr")
 library(tidyr)
 
-#Quantidade de vendas por ano e produto
 
+#Cantidades de ventas por año y producto 
 
-#Dataframe - Quantidade de Produtos por Ano
-dfDate <- data.frame(Produto = c('A','B','C'),
+#Dataframe - Cantidades de productos por ano 
+
+dfDate <- data.frame(Producto = c('A','B','C'),
                      A.2015 = c(10,12,20),
                      A.2016 = c(20,25,35),
                      A.2017 = c(15,20,30)
@@ -635,36 +670,48 @@ dfDate <- data.frame(Produto = c('A','B','C'),
 
 head(dfDate)
 
-#Utilizando a fun??o gather para mudar o formato da tabela
-?gather
 
-dfDate2 <- gather(dfDate, "Ano", "Quantidade", 2:4)
+#Utilizando la funcion gather para cambiar el formato de la tabla 
+#En este caso cambiando el nombre de los encabezados de las columnas 
+
+
+dfDate2 <- gather(dfDate, "Ano", "Cantidad", 2:4)
 head(dfDate2)
 
 
-?separate
+#separate 
 
-#Criando uma nova coluna para separar os dados
+
+#Creando una nueva columna para separar los datos 
+#En este caso se ha creado la columna A
+
 dfDate3 <- separate(dfDate2, Ano, c("A", "Ano"))
 dfDate3
 
-#Removendo a coluna 
+#Removiendo la columna
+
 dfDate3 <- dfDate3[-2]
 dfDate3
 
-#Acrescentando uma coluna M?s
+#Incrementando una columna mas, en este caso 
+
 dfDate3$Mes <- c('01','02','03')
 
 dfDate3
 
-#Fazendo a uni?o da coluna Ano e M?s
-?unite
+#unite 
 
-#Criando a coluna Data para receber M?s e Ano - separado por /
+#Realizando la union de la columna ano y mes en una nueva con unite separado por /
+
+dfDate3 <- separate(dfDate2, Ano, c("Producto", "Ano"))
+dfDate3
+
 dfDate4 <- dfDate3 %>%
-  unite(Data, Mes, Ano, sep = '/')
+  unite(Producto,col='pro-ano', Ano, sep = '/')
 
 head(dfDate4)
+
+# Tips: unite puede ser de utilidad para concatenar fechas dia, mes y ano
 
 
 
