@@ -19,10 +19,10 @@
 </a> &nbsp;  
 </table>
 
-## **Información**
+
 
  <div class="resume-section-content">
-                <h2 class="mb-5">Cursos y capacitaciones</h2>
+                <h2 class="mb-5">Información</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Análise de Dados em Linguagem R</h4>
