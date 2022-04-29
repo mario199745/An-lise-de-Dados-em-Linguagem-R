@@ -21,42 +21,12 @@
 
 
 
- <div class="resume-section-content">
-                <h2 class="mb-5">- Información</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0">Autor</h4>
-                        <div class="subheading mb-3">Ministerio de Economía de Brasil</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0">- Certificador</h4>
-                        <div class="subheading mb-3">Enap</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0">- Carga horaria</h4>
-                        <div class="subheading mb-3">20 h </div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0">- Disponibilidad</h4>
-                        <div class="subheading mb-3">20 días</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                </div>
-                               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0">- Idioma</h4>
-                        <div class="subheading mb-3">Portugues</div>
-                    </div>
-                </div>
+ ## **Lista de contenido**
+ - Autor : Ministerio de Economía de Brasil 
+ - Certificador : Enap
+ - Carga horaria : 20 h 
+ - Disponibilidad : 20 días
+ - Idioma : Portugues
 
 
 
