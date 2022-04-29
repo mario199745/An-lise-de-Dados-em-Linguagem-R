@@ -21,7 +21,7 @@
 
 
 
- ## **Lista de contenido**
+ ## **Información**
  - Autor : Ministerio de Economía de Brasil 
  - Certificador : Enap
  - Carga horaria : 20 h 
@@ -42,53 +42,30 @@
 
 ## **Recursos**
 
-- **Leaflet**
+<p>1
+    <a href="https://www.youtube.com/watch?v=rudNzAWON-s&t=1155s">Taller: Fragmentación del paisaje</a>.
+</p>
+<p>2
+    <a href="https://www.youtube.com/watch?v=l7v3pqzdYag&t=3663s">¿Qué son los fondos ambientales?</a>.
+</p>
+<p>3
+    <a href="https://derek-corcoran-barrios.github.io/CursoProgramacion/_book/index.html#descripcion-del-curso">Programación y Análisis de Datos Ambientales MedianteSoftware Libre</a>.
+</p>
+<p>4
+    <a href="https://datascienceineducation.com/">Data Science in Education Using R</a>.
+</p>
+<p>5
+    <a href="https://rspatial.org/raster/index.html ">Spatial Data Science with R</a>.
+</p>
+<p>6
+    <a href="https://www.youtube.com/watch?v=bo2xn6-Y9fc&t=2424s">Hands-On Machine Learning with R</a>.
+</p>
+<p>7
+    <a href="https://datavizs21.classes.andrewheiss.com/?fbclid=IwAR1yOXtLY5-9E9s0xzoCK1QoHHow0yGNBMar33_sID2XMEEPNLBY4FUkXB0">Data Visualization</a>.
+</p>
 
-```
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-```
-```
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-```
-```
-<script src="https://unpkg.com/leaflet-responsive-popup@0.6.4/leaflet.responsive.popup.js"></script>
-```
-```    
-<link rel="stylesheet" href="https://unpkg.com/leaflet-responsive-popup@0.6.4/leaflet.responsive.popup.rtl.css" />
-```
 
-- **Boostrapp** 
 
-```
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-```
-- **Bulma**
-
-```
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-
-```
-- **Fontawesome**
-
-```
-<script src="https://use.fontawesome.com/0adc4d4ec5.js"></script>
-```
-
-- **Base de datos**
-
-```
-https://github.com/ambarja/snowfalldb-peru
-```
-- **IG <3**
-  * Lat: -12.0556056
-  * Lon: -77.0865366
-
-## **Fechas**
-
- * 📅 03/11/2021
- * 🔵 Online
- * ⌚ 9:00 - 11:00 am - Perú
 
 ## **Software**
 
