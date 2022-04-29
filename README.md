@@ -1,4 +1,4 @@
-<h1 align="center"><strong>Analise-de-Dados-em-Linguagem-R</strong></h1>
+<h1 align="center"><strong>Analisis de datos en lenguaje R</strong></h1>
 
 <table align="center">
  <p align = "center">
@@ -13,17 +13,14 @@
 </table>
 
 
-![img](./portada/post.png)
+![img](./img/Imagem.png)
 
 ## **Lista de contenido**
- - Introducción al webmapping 
- - Tecnologías estandar al lado del cliente
- - Técnologías estandar al lado del servidor
- - Introducción a leafet 
- - Mi primera página web 
- - Mi primer mapa web con leaflet
- - Integración de R en el desarrollo de mapas webs
- - Creación de dashboards
+ - Modulo 1: Introduccion al analisis de datos  
+ - Modulo 2: Fundamentos de lenguaje R 
+ - Modulo 3: Introduccion a Machine Learning
+ - Modulo 4: Analisis de datos en la practica 
+  
 
 ## **Recursos**
 
@@ -75,15 +72,14 @@ https://github.com/ambarja/snowfalldb-peru
  * 🔵 Online
  * ⌚ 9:00 - 11:00 am - Perú
 
-## **Plataforma - Software**
+## **Software**
 
- * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png" height=12> **Facebook**
+ height=12> **Facebook**
  * <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/RStudio_logo_flat.svg" height=14> **Rstudio**
- * <img src="https://raw.githubusercontent.com/ambarja/Buenas-practicas-con-QGIS/main/img/vscode.png" height=14> **VsCode**
+ 
 
 ## **Contacto**
 
-* 🤓 **Antony Baja** ( <img src="https://raw.githubusercontent.com/ambarja/Buenas-practicas-con-QGIS/main/img/email.png" height=14> <b>antony.barja@upch.pe</b>)
-  - [Miembro oficial del **Grupo de Usuarios de QGIS Perú**](https://github.com/qgispe)
-  - [Líder de **OpenDroneMap-Perú**](https://www.facebook.com/groups/1467793856763738)
-  - [Investigador de **Inovalab-UPCH**](https://www.innovalab.info/)
+* 🤓 **Mario Caceres** ( <img src="https://raw.githubusercontent.com/ambarja/Buenas-practicas-con-QGIS/main/img/email.png" height=14> <b>Mario.mariocaceresreyna25@gmail.com</b>)
+  - [Miembro del Círculo de Investigación en Bosques Secos del Perú**](https://www.facebook.com/CIBOSEC)
+  
