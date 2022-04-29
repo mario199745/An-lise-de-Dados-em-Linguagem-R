@@ -21,9 +21,29 @@
 
 ## **Información**
 
- * 📅 03/11/2021
- * 🔵 Online
- * ⌚ 9:00 - 11:00 am - Perú
+ <div class="resume-section-content">
+                <h2 class="mb-5">Cursos y capacitaciones</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Análise de Dados em Linguagem R</h4>
+                        <div class="subheading mb-3">Escola Nacionalde Administração Pública - Enap</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2021 -  Enero 2022</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Fondos ambientales como una alternativa para la sostenibilidad financiera de las áreas protegidas</h4>
+                        <div class="subheading mb-3">Universidad para la Cooperación Internacional(UCI)</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Enero 2020 -  Agosto 2021</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Modelado de distribución de especies:aplicaciones usando R</h4>
+                        <div class="subheading mb-3">Cousteau Consultant Group</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2021 - Enero 2022</span></div>
+                </div>
 
 
 
