@@ -17,6 +17,17 @@
 <a href="mailto:mariocaceresreyna25@gmail.com" target="_blank">
 <img src=https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white   alt=linkedin style="margin-bottom: 5px;" />
 </a> &nbsp;  
+
+<a href="https://github.com/mario199745/An-lise-de-Dados-em-Linguagem-R/stargazers" target="_blank">
+<img src=https://img.shields.io/github/stars/ambarja/WebMapping-Taller?style=for-the-badge   alt=linkedin style="margin-bottom: 5px;" />
+</a> &nbsp;  
+
+<a href="https://github.com/mario199745/An-lise-de-Dados-em-Linguagem-R/fork?" target="_blank">
+<img src=https://img.shields.io/github/forks/ambarja/WebMapping-Taller?style=for-the-badge   alt=linkedin style="margin-bottom: 5px;" />
+</a> &nbsp; 
+
+
+
 </table>
 
 
