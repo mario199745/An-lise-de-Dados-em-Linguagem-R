@@ -27,6 +27,7 @@
  - Carga horaria : 20 h 
  - Disponibilidad : 20 días
  - Idioma : Portugues
+ - Enlace : https://www.escolavirtual.gov.br/curso/325
 
 
 
