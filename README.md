@@ -43,17 +43,10 @@
 ## **Recursos**
 
 <p>1
-<<<<<<< HEAD
-    <a href="https://peopleanalytics-regression-book.org">Handbook of Regression Modeling in People Analytics: With Examples in R, Python and Julia</a>.
+    <a href="https://datavizs21.classes.andrewheiss.com/?fbclid=IwAR1yOXtLY5-9E9s0xzoCK1QoHHow0yGNBMar33_sID2XMEEPNLBY4FUkXB0">Data Visualization</a>.
 </p>
 <p>2
     <a href="https://learningstatisticswithr.com/">Learning Statistics with R</a>.
-=======
-    <a href="https://www.youtube.com/watch?v=rudNzAWON-s&t=1155s">Taller: Fragmentación del paisaje</a>.
-</p>
-<p>2
-    <a href="https://www.youtube.com/watch?v=l7v3pqzdYag&t=3663s">¿Qué son los fondos ambientales?</a>.
->>>>>>> main
 </p>
 <p>3
     <a href="https://derek-corcoran-barrios.github.io/CursoProgramacion/_book/index.html#descripcion-del-curso">Programación y Análisis de Datos Ambientales MedianteSoftware Libre</a>.
@@ -68,7 +61,7 @@
     <a href="https://www.youtube.com/watch?v=bo2xn6-Y9fc&t=2424s">Hands-On Machine Learning with R</a>.
 </p>
 <p>7
-    <a href="https://datavizs21.classes.andrewheiss.com/?fbclid=IwAR1yOXtLY5-9E9s0xzoCK1QoHHow0yGNBMar33_sID2XMEEPNLBY4FUkXB0">Data Visualization</a>.
+    <a href="https://peopleanalytics-regression-book.org">Handbook of Regression Modeling in People Analytics: With Examples in R, Python and Julia</a>.
 </p>
 
 
