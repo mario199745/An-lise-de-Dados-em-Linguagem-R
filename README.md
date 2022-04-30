@@ -43,10 +43,10 @@
 ## **Recursos**
 
 <p>1
-    <a href="https://www.youtube.com/watch?v=rudNzAWON-s&t=1155s">Taller: Fragmentación del paisaje</a>.
+    <a href="https://peopleanalytics-regression-book.org">Handbook of Regression Modeling in People Analytics: With Examples in R, Python and Julia</a>.
 </p>
 <p>2
-    <a href="https://www.youtube.com/watch?v=l7v3pqzdYag&t=3663s">¿Qué son los fondos ambientales?</a>.
+    <a href="https://learningstatisticswithr.com/">Learning Statistics with R</a>.
 </p>
 <p>3
     <a href="https://derek-corcoran-barrios.github.io/CursoProgramacion/_book/index.html#descripcion-del-curso">Programación y Análisis de Datos Ambientales MedianteSoftware Libre</a>.
