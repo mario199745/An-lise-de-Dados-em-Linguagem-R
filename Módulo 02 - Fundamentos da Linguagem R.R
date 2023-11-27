@@ -6,6 +6,8 @@
 
 #Imprimiendo el primer mensaje 
 
+mensaje <- 'hola como estas'
+
 
 #Imprimiendo el valor de la variable en la consola 
 
