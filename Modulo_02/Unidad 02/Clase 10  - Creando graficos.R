@@ -2,7 +2,7 @@
 
 
 #Los graficos son esenciales para reprentar los resultados de tus analisis 
-#incluso pueden crarse graficos animados pero para ello nececitas contar con una  base de datos 
+#incluso pueden crearse graficos animados pero para ello nececitas contar con una  base de datos 
 #entonces utilizaremos la base de datos mtcar, la cual es de acceso libre. 
 
 
@@ -65,4 +65,6 @@ ggplot(mtcars,aes(x = mpg, y = hp))+geom_point(aes(color=factor(cyl), shape = fa
        x = "Miles Per Gallon",
        y = "Horsepower",
        caption = "Source: MTCARS Dataset")
+
+
 #Fuente: https://medium.com/@mukul.mschauhan/data-visualization-in-r-with-ggplot-b39b14991d69

@@ -1,37 +1,26 @@
 #-----------------------3.1. Utilizando join ----------------------
 
-
-#Join
-
-#Instalando un paquete
-
 #install.packages("dplyr")
 library(dplyr)
 
 
 df1 <- data.frame(Producto = c(1,2,3,5), Precio = c(15,10,25,20))
 
-head(df1)
-
 df2 <- data.frame(Producto = c(1,2,3,5), Nombre = c("A","B","C","D"))
-head(df2)
 
 
 #Resultado de join df1 + df2 usando ---> left join 
 
 df3 <- left_join(df1,df2,"Producto")
-head(df3)
 
 
 #Resultado de join  df1 + df2 usando ---> right join
 
 df4 <- right_join(df1,df2, "Producto")
-head(df4)
 
 #Resultado de join  df1 + df2 usando ---> inner join
 
 df5 <- inner_join(df1, df2, "Producto")
-head(df5)
 
 
 #Aqui puedes encontrar mas codigos 
